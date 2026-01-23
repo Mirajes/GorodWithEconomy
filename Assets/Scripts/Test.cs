@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Game : MonoBehaviour
+public class Test : MonoBehaviour
 {
     [SerializeField]
     private GameObject _SlotPrefab;
@@ -21,6 +21,7 @@ public class Game : MonoBehaviour
             for (int j = 0; j < ColCount; j++)
             {
                 GameObject SlotClone = Instantiate(_SlotPrefab);
+                SlotClone.name = $"({i}, {j})";
                 //SlotClone.transform.SetParent(MainPlot.transform, false);
                 SlotClone.transform.position = new Vector3(Position_X_Axis, MainPlot.transform.position.y + SlotClone.transform.localScale.y, Position_Z_Axis);
 

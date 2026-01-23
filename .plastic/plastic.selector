@@ -1,4 +1,0 @@
-repository "GorodWithEconomy 2025-09-09_19-46-37/GorodWithEconomy@10171462457866@cloud"
-  path "/"
-    br "/main"
-    co "/main"
